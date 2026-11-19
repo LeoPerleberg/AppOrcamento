@@ -1,0 +1,14 @@
+* text=auto
+
+# Scripts Unix precisam de LF; scripts Windows de CRLF
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Arquivos binários
+*.png binary
+*.jpg binary
+*.jar binary
+*.keystore binary
+*.ods binary
+*.pbxproj -text
